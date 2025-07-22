@@ -860,7 +860,7 @@ font-weight: bold;
 }
 
 .user-search {
-  width: 100%;
+  width: 200px;
   height: 100%;
   padding: 0px 16px 0px 45px;
   border-radius: 5px;
@@ -1038,7 +1038,7 @@ font-weight: bold;
 }
 
 .user-search {
-  width: 100%;
+  width: 200px;
   height: 100%;
   padding: 0px 16px 0px 45px;
   border-radius: 5px;
