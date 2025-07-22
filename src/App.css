@@ -872,7 +872,7 @@ font-weight: bold;
   font-family: Poppins;
   outline: none;
   box-shadow: 0 4px 15px rgba(156, 73, 207, 0.3);
-  line-height: 320px;
+  line-height: 35px;
   display: flex;
   align-items: center;
 }
@@ -893,8 +893,8 @@ font-weight: bold;
 
 .search-container {
   position: relative;
-  width: 1078px;
-  height: 320px;
+  width: 180px;
+  height: 35px;
 }
 
 .search-icon {
@@ -1036,8 +1036,8 @@ font-weight: bold;
 /* Search Container Styles - Final Override */
 .search-container {
   position: relative;
-  width: 1078px;
-  height: 320px;
+  width: 180px;
+  height: 35px;
 }
 
 .user-search {
@@ -1053,7 +1053,7 @@ font-weight: bold;
   font-family: Poppins;
   outline: none;
   box-shadow: 0 4px 15px rgba(156, 73, 207, 0.3);
-  line-height: 320px;
+  line-height: 35px;
   display: flex;
   align-items: center;
 }
