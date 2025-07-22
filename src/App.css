@@ -1036,7 +1036,7 @@ font-weight: bold;
 /* Search Container Styles - Final Override */
 .search-container {
   position: relative !important;
-  width: 180px !important;
+  width: 150px !important;
   height: 35px !important;
 }
 
