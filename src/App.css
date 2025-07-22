@@ -11,6 +11,7 @@ body {
   flex: 1;
   background-color: lavender;
   padding: 15px;
+  margin-left: 300px;
 }
 
 .grid-container {
@@ -833,10 +834,9 @@ font-weight: bold;
 
 .users-container {
   padding: 20px;
-  width: calc(100vw - 300px - 80px);
+  max-width: 950px;
   height: 320px;
-  margin-left: 340px;
-  margin-right: 40px;
+  margin: 0 auto;
 }
 .user-card {
   background-color: #eecdf7;
