@@ -868,11 +868,15 @@ font-weight: bold;
 
 .user-search {
   padding: 8px 16px 8px 40px;
-  border-radius: 6px;
+  border-radius: 5px;
   border: 1px solid #ccc;
-  background-color: #YOUR_ICON_COLOR;
+  background-color: #9C49CF;
   color: white;
-  width: 250px;
+  width: 319px;
+  height: 44px;
+  position: relative;
+  top: 14px;
+  left: 744px;
 }
 
 .user-search::placeholder {
