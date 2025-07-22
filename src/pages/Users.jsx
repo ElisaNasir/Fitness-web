@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { FiTrash2 } from 'react-icons/fi';
-import { AiOutlineEye } from 'react-icons/ai';
+import { AiOutlineEye, AiOutlineSearch } from 'react-icons/ai';
 
  const initialUsers = [
   {
@@ -34,7 +34,10 @@ function Users(){
       <div className="user-card">
         <div className="user-header">
           <h2>User Information</h2>
-          <input type="text" placeholder="Ex : type by name" className="user-search" />
+          <div className="user-search-container">
+            <AiOutlineSearch className="search-icon" />
+            <input type="text" placeholder="Ex : type by name" className="user-search" />
+          </div>
         </div>
 
         <table className="user-table">
