@@ -825,7 +825,8 @@ font-weight: bold;
 
 .users-container {
   padding: 20px;
-  min-height: 100vh;
+  width: 1078px;
+  height: 320px;
 }
 .user-card {
   background-color: #eecdf7;
