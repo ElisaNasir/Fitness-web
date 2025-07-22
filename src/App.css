@@ -833,10 +833,10 @@ font-weight: bold;
 
 .users-container {
   padding: 20px;
-  width: calc(100vw - 300px - 384px);
+  width: calc(100vw - 300px - 80px);
   height: 320px;
-  margin-left: 492px;
-  margin-right: 192px;
+  margin-left: 340px;
+  margin-right: 40px;
 }
 .user-card {
   background-color: #eecdf7;
