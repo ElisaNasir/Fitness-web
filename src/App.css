@@ -889,8 +889,9 @@ font-weight: bold;
 
 
 .user-table {
-  width: 100%;
+  width: 80%;
   background-color: transparent;
+  margin: 0 auto;
 }
 
 .search-container {
