@@ -864,8 +864,6 @@ font-weight: bold;
   z-index: 2;
   pointer-events: none;
   user-select: none;
-  opacity: 0.8;
-  filter: invert(1);
 }
 
 .user-search {
