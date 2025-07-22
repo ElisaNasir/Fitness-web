@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { FiTrash2 } from 'react-icons/fi';
 import { AiOutlineEye } from 'react-icons/ai';
+import vector from '/Vector.png';
 
  const initialUsers = [
   {
@@ -35,7 +36,7 @@ function Users(){
         <div className="user-header">
           <h2>User Information</h2>
           <div className="search-container">
-            <span className="search-icon">🔍</span>
+            <img src={vector} alt="search" className="search-icon" />
             <input type="text" placeholder="Ex : type by name" className="user-search" />
           </div>
         </div>
