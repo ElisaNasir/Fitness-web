@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import { FiTrash2 } from 'react-icons/fi';
 import { AiOutlineEye } from 'react-icons/ai';
-import { FiSearch } from 'react-icons/fi';
 
  const initialUsers = [
   {
@@ -36,7 +35,7 @@ function Users(){
         <div className="user-header">
           <h2>User Information</h2>
           <div className="search-container">
-            <FiSearch className="search-icon" />
+            <span className="search-icon">🔍</span>
             <input type="text" placeholder="Ex : type by name" className="user-search" />
           </div>
         </div>
