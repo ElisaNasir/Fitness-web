@@ -861,8 +861,7 @@ font-weight: bold;
   font-size: 14px;
   outline: none;
   box-shadow: 0 4px 15px rgba(156, 73, 207, 0.3);
-  display: flex;
-  align-items: center;
+  line-height: 1;
 }
 
 .user-search::placeholder {
@@ -873,14 +872,12 @@ font-weight: bold;
 .search-icon {
   position: absolute;
   left: 16px;
-  top: 50%;
+  top: 22px;
   transform: translateY(-50%);
   color: white;
   font-size: 16px;
   z-index: 1;
   pointer-events: none;
-  display: flex;
-  align-items: center;
 }
 
 .user-table {
