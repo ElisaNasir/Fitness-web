@@ -3,19 +3,19 @@ body {
   padding: 0;
   background-color: lavender;
   font-family: sans-serif;
-  height:100vh;
-  
+  min-height: 100vh;
 }
 
 .container {
   flex: 1;
   background-color: lavender;
   padding: 15px;
+  margin-left: 280px;
 }
 
 .grid-container {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .sidebar {
@@ -27,7 +27,10 @@ body {
   justify-content: space-between;
   padding: 0;
   height: 100vh;
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 
 .sidebar .logo-design {
@@ -84,10 +87,11 @@ body {
 
 .license {
   font-size: 12px;
-  color: white;
-  padding: 10px;
+  color: #666;
+  padding: 10px 0;
   text-align: center;
-  
+  margin-top: 10px;
+  border-top: 1px solid #ddd;
 }
 
 .header {
@@ -844,13 +848,35 @@ font-weight: bold;
   font-weight: 600;
 
 }
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  z-index: 2;
+  pointer-events: none;
+  user-select: none;
+}
+
 .user-search {
-  padding: 8px 16px;
-  border-radius: 6px;
+  padding: 8px 16px 8px 40px;
+  border-radius: 5px;
   border: 1px solid #ccc;
   background-color: #9C49CF;
   color: white;
-  width: 250px;
+  width: 319px;
+  height: 44px;
+  position: relative;
+  top: 14px;
+  left: 744px;
 }
 
 .user-search::placeholder {

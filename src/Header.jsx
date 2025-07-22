@@ -12,6 +12,9 @@ function Header(){
          <Zone />
       </div>
       <p>Welcome back. Manage all zones of your fitness business here.</p>
+      <div className='license'>
+        © 2025 King Adri | All Rights Reserved
+      </div>
      </header>
     )
 }

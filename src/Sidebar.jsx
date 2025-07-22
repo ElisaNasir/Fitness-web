@@ -54,9 +54,6 @@ function Sidebar(){
           </li>    
         </ul> 
         </div>
-        <div className='license'>
-        © 2025 King Adri | All Rights Reserved
-    </div> 
     </div>
 
     )
