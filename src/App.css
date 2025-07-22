@@ -922,8 +922,8 @@ font-weight: bold;
 .user-table thead tr::before {
   content: '';
   position: absolute;
-  left: -9999px;
-  right: -9999px;
+  left: -24px;
+  right: -24px;
   top: 0;
   bottom: 0;
   background-color: white;
