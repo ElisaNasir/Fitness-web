@@ -1,0 +1,63 @@
+.users-container {
+  padding: 20px;
+  width: 950px;
+  height: 400px; /* Increased height from 320px to 400px */
+  margin-right: 12px;
+  margin-left: 12px;
+}
+
+.user-card {
+  background-color:#CD44EF26;
+  padding: 0; /* Remove padding to allow full-width line */
+  border-radius: 12px;
+  height: 100%; /* Make card take full container height */
+}
+
+.user-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 24px 24px 0 24px; /* Add padding only to header content */
+}
+
+.user-table {
+  width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  position: relative;
+  margin: 0; /* Remove any margin */
+}
+
+.user-table thead {
+  background-color: white;
+  font-size: 14px;
+  position: relative;
+}
+
+.user-table thead::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -24px; /* Extend line to the left edge of container */
+  right: -24px; /* Extend line to the right edge of container */
+  height: 1px;
+  background-color: white;
+  width: calc(100% + 48px); /* Full width including padding compensation */
+}
+
+.user-table th,
+.user-table td {
+  padding: 10px 16px;
+  text-align: left;
+  color: black;
+  border: none;
+}
+
+.user-table tbody {
+  padding: 0 24px; /* Add padding back to tbody content */
+}
+
+.user-table tbody tr {
+  font-size: 14px;
+}
