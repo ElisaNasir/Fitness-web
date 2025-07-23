@@ -11,6 +11,7 @@
   padding: 0; /* Remove padding to allow full-width line */
   border-radius: 12px;
   height: 100%; /* Make card take full container height */
+  overflow: hidden; /* Prevent any content from extending outside */
 }
 
 .user-header {
@@ -39,11 +40,10 @@
   content: '';
   position: absolute;
   bottom: 0;
-  left: -24px; /* Extend line to the left edge of container */
-  right: -24px; /* Extend line to the right edge of container */
+  left: -24px;
+  right: -24px;
   height: 1px;
   background-color: white;
-  width: calc(100% + 48px); /* Full width including padding compensation */
 }
 
 .user-table th,
