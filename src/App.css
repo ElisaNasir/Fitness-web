@@ -919,11 +919,13 @@ font-weight: bold;
 }
 
 .action-icons button:first-child {
+  border: 2px solid;
+  border-image: linear-gradient(135deg, #532873, #9C49CF) 1;
   border-color: #9C49CF;
 }
 
 .action-icons button:last-child {
-  border-color: #dc2626;
+  border-color: #E7104B;
 }
 
 .action-icons button:first-child::after {
@@ -933,7 +935,7 @@ font-weight: bold;
   right: 4px;
   width: 6px;
   height: 6px;
-  background-color: #9C49CF;
+  background: linear-gradient(135deg, #532873, #9C49CF);
   border-radius: 50%;
 }
 
@@ -949,7 +951,7 @@ font-weight: bold;
 }
 
 .icon.delete {
-  filter: brightness(0) saturate(100%) invert(17%) sepia(95%) saturate(7471%) hue-rotate(356deg) brightness(91%) contrast(84%);
+  filter: brightness(0) saturate(100%) invert(13%) sepia(89%) saturate(7471%) hue-rotate(334deg) brightness(91%) contrast(84%);
 }
 .subscription-cards {
   display: flex;
