@@ -825,7 +825,10 @@ font-weight: bold;
 
 .users-container {
   padding: 20px;
-  min-height: 100vh;
+  width: 950px;
+  height: 280px;
+  margin-right: 12px;
+  margin-left: 12px;
 }
 .user-card {
   background-color: #eecdf7;
@@ -885,10 +888,10 @@ font-weight: bold;
 .status-badge {
   background-color: white;
   color: #c054cf;
-  padding: 4px 12px;
+  padding: 6px 16px;
   border-radius: 999px;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
 }
 .action-icons {
   display: flex;
