@@ -154,7 +154,7 @@
 .delete-btn {
   flex: 1;
   background: #9C49CF;
-  border: 2px solid #9C49CF;
+  border: none;
   color: white;
   padding: 12px 20px;
   border-radius: 25px;
@@ -162,11 +162,12 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
+  box-shadow: none;
+  outline: none;
 }
 
 .delete-btn:hover {
   background: #7a35a6;
-  border-color: #7a35a6;
 }
 
 /* Responsive adjustments for modal */
