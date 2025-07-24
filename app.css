@@ -7,8 +7,9 @@
 /* User Details Modal Styles */
 .user-details-modal {
   background: white;
-  border-radius: 20px;
-  width: 700px;
+  border-radius: 12px;
+  width: 800px;
+  height: 500px;
   max-width: 90vw;
   max-height: 90vh;
   overflow-y: auto;
@@ -26,14 +27,18 @@
   margin: 0;
   font-size: 22px;
   font-weight: 600;
-  color: #9C49CF;
+  background: linear-gradient(135deg, #9C49CF 0%, #532873 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .modal-content {
   padding: 30px;
   display: flex;
-  gap: 30px;
+  gap: 40px;
   align-items: flex-start;
+  height: calc(100% - 140px);
 }
 
 .user-profile-section {
@@ -41,7 +46,8 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 0;
-  flex: 0 0 250px;
+  flex: 0 0 280px;
+  height: 100%;
 }
 
 .profile-image-container {
@@ -62,7 +68,7 @@
 
 .user-name {
   font-size: 20px;
-  font-weight: normal;
+  font-weight: 200;
   background: linear-gradient(135deg, #9C49CF 0%, #532873 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -72,13 +78,13 @@
 }
 
 .user-email {
-  color: #666;
+  color: #6c6a6a;
   font-size: 14px;
   margin: 4px 0;
 }
 
 .user-phone {
-  color: #666;
+  color: #6c6a6a;
   font-size: 14px;
   margin: 4px 0 15px 0;
 }
@@ -97,12 +103,14 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .user-details-grid {
   display: flex;
   gap: 30px;
   margin-top: 0;
+  height: 100%;
 }
 
 .left-column {
@@ -121,20 +129,20 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .detail-item label {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
-  color: #9C49CF;
+  color: black;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
 .detail-item span {
   font-size: 14px;
-  color: #333;
+  color: #666;
   font-weight: 500;
 }
 
@@ -161,13 +169,13 @@
 
 .back-btn {
   flex: 1;
+  color: #9C49CF;
   background: white;
   border: 2px solid #9C49CF;
-  color: #9C49CF;
-  padding: 12px 20px;
-  border-radius: 25px;
+  padding: 10px 15px;
+  border-radius: 8px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: normal;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -178,13 +186,13 @@
 
 .delete-btn {
   flex: 1;
-  background: #9C49CF;
+  background: linear-gradient(135deg, #9C49CF 0%, #532873 100%);
   border: none;
   color: white;
-  padding: 12px 20px;
-  border-radius: 25px;
+  padding: 10px 15px;
+  border-radius: 8px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: normal;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: none;
@@ -192,13 +200,14 @@
 }
 
 .delete-btn:hover {
-  background: #7a35a6;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 /* Responsive adjustments for modal */
 @media (max-width: 768px) {
   .user-details-modal {
     width: 95vw;
+    height: auto;
     margin: 10px;
   }
   
@@ -206,6 +215,7 @@
     flex-direction: column;
     gap: 20px;
     padding: 20px;
+    height: auto;
   }
   
   .user-profile-section {
@@ -213,7 +223,7 @@
   }
   
   .user-details-grid {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     gap: 15px;
   }
   
