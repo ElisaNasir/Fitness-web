@@ -8,11 +8,10 @@
 .user-details-modal {
   background: white;
   border-radius: 12px;
-  width: 800px;
-  height: 500px;
+  width: 750px;
   max-width: 90vw;
-  max-height: 90vh;
-  overflow-y: auto;
+  max-height: 85vh;
+  overflow: hidden;
   position: relative;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
@@ -34,11 +33,10 @@
 }
 
 .modal-content {
-  padding: 30px;
+  padding: 25px;
   display: flex;
-  gap: 40px;
+  gap: 30px;
   align-items: flex-start;
-  height: calc(100% - 140px);
 }
 
 .user-profile-section {
@@ -46,8 +44,7 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 0;
-  flex: 0 0 280px;
-  height: 100%;
+  flex: 0 0 250px;
 }
 
 .profile-image-container {
@@ -103,7 +100,6 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 
 .user-details-grid {
@@ -201,6 +197,59 @@
 
 .delete-btn:hover {
   color: rgba(255, 255, 255, 0.8);
+}
+
+.user-details-grid {
+  display: flex;
+  gap: 25px;
+  margin-top: 0;
+}
+
+.left-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.detail-item label {
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.detail-item span {
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+.detail-item.subscription-item {
+  background-color: #CD44EF26;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.detail-item.subscription-item label {
+  color: #CD44EF;
+}
+
+.detail-item.subscription-item span {
+  color: #CD44EF;
 }
 
 /* Responsive adjustments for modal */
