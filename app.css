@@ -119,6 +119,14 @@
   border-radius: 8px;
 }
 
+.detail-item.subscription-item label {
+  color: #CD44EF;
+}
+
+.detail-item.subscription-item span {
+  color: #CD44EF;
+}
+
 .modal-actions {
   display: flex;
   gap: 15px;
