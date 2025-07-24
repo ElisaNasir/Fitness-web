@@ -132,35 +132,37 @@ function Users(){
                 </div>
               </div>
 
-              <div className="user-details-grid">
-                <div className="detail-item">
-                  <label>DATE OF BIRTH</label>
-                  <span>{selectedUser.dateOfBirth}</span>
-                </div>
-                
-                <div className="detail-item subscription-item">
-                  <label>SUBSCRIPTION</label>
-                  <span>{selectedUser.subscription}</span>
-                </div>
-                
-                <div className="detail-item">
-                  <label>WEIGHT</label>
-                  <span>{selectedUser.weight}</span>
-                </div>
-                
-                <div className="detail-item">
-                  <label>REGISTERED ON</label>
-                  <span>{selectedUser.registered}</span>
-                </div>
-                
-                <div className="detail-item">
-                  <label>HEIGHT</label>
-                  <span>{selectedUser.height}</span>
-                </div>
-                
-                <div className="detail-item">
-                  <label>GENDER</label>
-                  <span>{selectedUser.gender}</span>
+              <div className="user-details-section">
+                <div className="user-details-grid">
+                  <div className="detail-item">
+                    <label>DATE OF BIRTH</label>
+                    <span>{selectedUser.dateOfBirth}</span>
+                  </div>
+                  
+                  <div className="detail-item subscription-item">
+                    <label>SUBSCRIPTION</label>
+                    <span>{selectedUser.subscription}</span>
+                  </div>
+                  
+                  <div className="detail-item">
+                    <label>WEIGHT</label>
+                    <span>{selectedUser.weight}</span>
+                  </div>
+                  
+                  <div className="detail-item">
+                    <label>REGISTERED ON</label>
+                    <span>{selectedUser.registered}</span>
+                  </div>
+                  
+                  <div className="detail-item">
+                    <label>HEIGHT</label>
+                    <span>{selectedUser.height}</span>
+                  </div>
+                  
+                  <div className="detail-item">
+                    <label>GENDER</label>
+                    <span>{selectedUser.gender}</span>
+                  </div>
                 </div>
               </div>
             </div>
