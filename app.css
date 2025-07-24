@@ -77,10 +77,10 @@
 }
 
 .user-status-badge {
-  background-color: #9C49CF;
-  color: white;
+  background-color: #CD44EF26;
+  color: #9C49CF;
   padding: 6px 16px;
-  border-radius: 20px;
+  border-radius: 8px;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.5px;
