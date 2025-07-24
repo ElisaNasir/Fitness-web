@@ -827,8 +827,7 @@ font-weight: bold;
   padding: 20px;
   width: 950px;
   height: 280px;
-  margin-right: 12px;
-  margin-left: 12px;
+  margin: 0 auto;
 }
 .user-card {
   background-color: #eecdf7;
