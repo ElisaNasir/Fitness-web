@@ -831,7 +831,7 @@ font-weight: bold;
 .users-container {
   padding: 20px;
   width: 950px;
-  height: 320px;
+  height: 280px;
   margin-right: 12px;
   margin-left: 12px;
 }
@@ -952,7 +952,7 @@ font-weight: bold;
   padding: 6px 16px;
   border-radius: 999px;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .action-icons {
