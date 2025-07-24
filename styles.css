@@ -914,7 +914,10 @@ font-weight: bold;
 
 .user-table tbody {
   padding: 0 24px; /* Add padding back to tbody content */
-  margin-top: 16px; /* Add space after the header */
+}
+
+.user-table tbody tr:first-child td {
+  padding-top: 26px; /* Add extra top padding to first row for spacing after header */
 }
 
 .user-table tbody tr {
