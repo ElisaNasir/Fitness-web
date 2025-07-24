@@ -831,7 +831,7 @@ font-weight: bold;
 .users-container {
   padding: 20px;
   width: 950px;
-  height: 400px; /* Increased height from 320px to 400px */
+  height: 320px;
   margin-right: 12px;
   margin-left: 12px;
 }
