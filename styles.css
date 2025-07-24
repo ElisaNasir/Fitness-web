@@ -948,7 +948,7 @@ font-weight: bold;
   padding: 6px 16px;
   border-radius: 999px;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: normal;
 }
 
 .action-icons {
