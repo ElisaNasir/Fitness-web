@@ -905,26 +905,51 @@ font-weight: bold;
   align-items: center;
 }
 
+.action-icons button {
+  background-color: #CD44EF26;
+  border: 2px solid;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-icons button:first-child {
+  border-color: #9C49CF;
+}
+
+.action-icons button:last-child {
+  border-color: #dc2626;
+}
+
+.action-icons button:first-child::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 6px;
+  height: 6px;
+  background-color: #9C49CF;
+  border-radius: 50%;
+}
+
 .icon {
-  font-size: 18px;
+  width: 18px;
+  height: 18px;
   cursor: pointer;
   transition: 0.2s ease;
 }
 
 .icon.view {
-  color: #c054cf;
-}
-
-.icon.view:hover {
-  color: #9333ea;
+  filter: brightness(0) saturate(100%) invert(37%) sepia(71%) saturate(1234%) hue-rotate(267deg) brightness(94%) contrast(86%);
 }
 
 .icon.delete {
-  color: #c054cf;
-}
-
-.icon.delete:hover {
-  color: #dc2626;
+  filter: brightness(0) saturate(100%) invert(17%) sepia(95%) saturate(7471%) hue-rotate(356deg) brightness(91%) contrast(84%);
 }
 .subscription-cards {
   display: flex;
