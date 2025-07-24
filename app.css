@@ -113,6 +113,12 @@
   font-weight: 500;
 }
 
+.detail-item.subscription-item {
+  background-color: #CD44EF26;
+  padding: 12px;
+  border-radius: 8px;
+}
+
 .modal-actions {
   display: flex;
   gap: 15px;

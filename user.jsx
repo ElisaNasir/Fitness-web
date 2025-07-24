@@ -138,7 +138,7 @@ function Users(){
                   <span>{selectedUser.dateOfBirth}</span>
                 </div>
                 
-                <div className="detail-item">
+                <div className="detail-item subscription-item">
                   <label>SUBSCRIPTION</label>
                   <span>{selectedUser.subscription}</span>
                 </div>
