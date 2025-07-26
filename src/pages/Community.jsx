@@ -3,7 +3,9 @@ function Community(){
     return(
         <div className="community-container">
       <div className="report-box">
-        <h2 className="report-title">Reported Content</h2>
+        <div className="report-title">
+          <h2>Reported Content</h2>
+        </div>
         <table className="report-table">
           <thead>
             <tr>
