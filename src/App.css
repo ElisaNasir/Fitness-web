@@ -624,11 +624,12 @@ font-weight: bold;
   border: 2px solid #d58cf3;
   border-radius: 12px;
   padding: 20px;
+  height: 250px;
   box-shadow: 0 0 10px #f3e3fa;
 }
 
-.report-title {
-  margin-bottom: 16px;
+.report-title h2{
+  margin-top: 16px;
   font-weight: bold;
 }
 
@@ -636,6 +637,9 @@ font-weight: bold;
   width: 100%;
   border-collapse: collapse;
   font-size: 14px;
+  margin-bottom: 6px;
+  justify-content: center; 
+  align-items: center;
 }
 
 .report-table th {
@@ -643,6 +647,8 @@ font-weight: bold;
   text-align: left;
   padding: 12px 8px;
   font-weight: bold;
+  border: none;
+  position: relative;
 }
 
 .report-table td {
