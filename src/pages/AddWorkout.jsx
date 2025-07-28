@@ -120,7 +120,7 @@ function AddWorkout() {
                 src="/video-placeholder.png" 
                 alt="Video placeholder" 
                 onError={(e) => {
-                  e.target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxyZWN0IHg9IjMwIiB5PSIzNSIgd2lkdGg9IjQwIiBoZWlnaHQ9IjMwIiByeD0iNCIgZmlsbD0iIzlCOUI5OCIvPgo8cG9seWdvbiBwb2ludHM9IjQ1LDQ1IDU1LDUwIDQ1LDU1IiBmaWxsPSIjRjNGNEY2Ii8+Cjwvc3ZnPgo=';
+                  e.target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxyZWN0IHg9IjIwIiB5PSIzMCIgd2lkdGg9IjYwIiBoZWlnaHQ9IjQwIiByeD0iNCIgZmlsbD0iIzlCOUI5OCIvPgo8Y2lyY2xlIGN4PSIzNSIgY3k9IjQyIiByPSI1IiBmaWxsPSIjRjNGNEY2Ii8+Cjxwb2x5Z29uIHBvaW50cz0iMjUsNjUgMzUsNTUgNDUsNjAgNjAsNTAgNzUsNjUgNzUsNzAgMjUsNzAiIGZpbGw9IiNGM0Y0RjYiLz4KPC9zdmc+';
                 }}
                 style={{width: '60px', height: '60px', borderRadius: '4px', opacity: '0.7'}}
               />
