@@ -119,12 +119,10 @@ function AddWorkout() {
             src="/gallery-icon.png" 
             alt="Gallery" 
             onError={(e) => {
-              e.target.style.display = 'none';
-              e.target.nextSibling.style.display = 'block';
+              e.target.src = '/default-gallery.png';
             }}
             style={{width: '80px', height: '80px', opacity: '0.5'}}
           />
-          <div style={{fontSize: '40px', color: '#ccc', display: 'none'}}>🖼️</div>
         </div>
 
         <div className="action-buttons">
