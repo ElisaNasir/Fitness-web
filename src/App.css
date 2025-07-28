@@ -582,32 +582,34 @@ font-weight: bold;
 .workout-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr); 
-  gap: 4px;
-  box-sizing: border-box;
+  gap: 1px;
   padding: 0;
-  width: 100%;
   margin: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .workout-card {
   display: block;
   position: relative;
   overflow: hidden;
-  border-radius: 16px;
+  border-radius: 8px;
   margin: 0;
   padding: 0;
+  line-height: 0;
 }
 
 .workout-image {
   width: 100%;
-  height: auto;
+  height: 200px;
   object-fit: cover;
-  border-radius: 16px;
+  border-radius: 8px;
   display: block;
   z-index: 1;
   margin: 0;
   padding: 0;
   vertical-align: top;
+  line-height: 0;
 }
 
 .delete-icon {
