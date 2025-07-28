@@ -636,13 +636,13 @@ font-weight: bold;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  display: flex;
-  gap: 20px;
+  position: relative;
 }
 
 /* First container specific styling */
 .section-container:first-of-type {
-  position: relative;
+  display: flex;
+  gap: 20px;
 }
 
 /* Section title */
@@ -738,20 +738,13 @@ font-weight: bold;
   display: block;
 }
 
-/* Buttons row - positioned at bottom right for first container */
+/* Buttons row - positioned at bottom right for all containers */
 .action-buttons {
   position: absolute;
   bottom: 20px;
   right: 20px;
   display: flex;
   gap: 10px;
-}
-
-/* Second container buttons - normal positioning */
-.section-container:nth-of-type(2) .action-buttons {
-  position: static;
-  justify-content: flex-end;
-  margin-top: 10px;
 }
 
 .cancel-btn,

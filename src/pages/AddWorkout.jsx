@@ -147,19 +147,20 @@ function AddWorkout() {
 
       {/* === Workout Information Section === */}
       <div className="section-container">
-        <h2 className="section-title">Workout Information</h2>
+        <div className="form-content">
+          <h2 className="section-title">Workout Information</h2>
 
-        <div className="form-group">
-          <label>Workout Name</label>
-          <input
-            type="text"
-            name="workoutName"
-            value={workoutData.workoutName}
-            onChange={handleWorkoutChange}
-            placeholder="Arms Exercise"
-            className="form-input"
-          />
-        </div>
+          <div className="form-group">
+            <label>Workout Name</label>
+            <input
+              type="text"
+              name="workoutName"
+              value={workoutData.workoutName}
+              onChange={handleWorkoutChange}
+              placeholder="Arms Exercise"
+              className="form-input"
+            />
+          </div>
 
         <div className="form-group">
           <label>Workout Description</label>
