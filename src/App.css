@@ -301,9 +301,7 @@ font-weight: bold;
 }
 
 .subscription-wrapper {
-  padding: 20px;
-  display: flex;
-  justify-content: center;
+  /* Wrapper styling removed - container handles all spacing */
 }
 
 .subscription-container {
