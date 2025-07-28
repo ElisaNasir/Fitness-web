@@ -583,9 +583,9 @@ font-weight: bold;
   display: grid;
   grid-template-columns: repeat(4, 1fr); 
   gap: 4px;
-  padding: 10px;
-  max-width: 1200px;
-  margin: auto;
+  padding: 0;
+  width: 100%;
+  margin: 0;
 }
 
 .workout-card {
