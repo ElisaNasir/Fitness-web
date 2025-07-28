@@ -779,12 +779,11 @@ font-weight: bold;
 }
 
 .Pay-box {
-  width: calc(100% - 40px);
-  background: #f5edff;
-  border: 2px solid #a259ff;
+  width: 100%;
+  background-color: #f9edfd;
+  border: 2px solid #d58cf3;
   border-radius: 20px;
   padding: 25px;
-  margin: 0 20px;
 }
 
 .Pay-title {
