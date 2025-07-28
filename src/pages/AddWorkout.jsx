@@ -103,40 +103,28 @@ function AddWorkout() {
             />
           </div>
 
-          <div className="upload-container">
+        </div>
+
+        <div className="upload-area">
+          <div className="upload-section">
             <label>Upload Video</label>
             <input
               type="file"
               accept="video/*"
               onChange={handleVideoUpload}
               className="file-input"
+              id="video-upload"
             />
-            {exerciseData.video ? (
-              <div style={{width: '60px', height: '60px', backgroundColor: '#f0f0f0', borderRadius: '4px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '12px'}}>
-                {exerciseData.video.name.substring(0, 8)}...
-              </div>
-            ) : (
+            <label htmlFor="video-upload" className="upload-placeholder">
               <img 
                 src="/video-placeholder.png" 
                 alt="Video placeholder" 
                 onError={(e) => {
                   e.target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxyZWN0IHg9IjIwIiB5PSIzMCIgd2lkdGg9IjYwIiBoZWlnaHQ9IjQwIiByeD0iNCIgZmlsbD0iIzlCOUI5OCIvPgo8Y2lyY2xlIGN4PSIzNSIgY3k9IjQyIiByPSI1IiBmaWxsPSIjRjNGNEY2Ii8+Cjxwb2x5Z29uIHBvaW50cz0iMjUsNjUgMzUsNTUgNDUsNjAgNjAsNTAgNzUsNjUgNzUsNzAgMjUsNzAiIGZpbGw9IiNGM0Y0RjYiLz4KPC9zdmc+';
                 }}
-                style={{width: '60px', height: '60px', borderRadius: '4px', opacity: '0.7'}}
               />
-            )}
+            </label>
           </div>
-        </div>
-
-        <div className="default-image-area">
-          <img 
-            src="/gallery-icon.png" 
-            alt="Gallery" 
-            onError={(e) => {
-              e.target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxyZWN0IHg9IjIwIiB5PSIzMCIgd2lkdGg9IjYwIiBoZWlnaHQ9IjQwIiByeD0iNCIgZmlsbD0iIzlCOUI5OCIvPgo8Y2lyY2xlIGN4PSIzNSIgY3k9IjQyIiByPSI1IiBmaWxsPSIjRjNGNEY2Ii8+Cjxwb2x5Z29uIHBvaW50cz0iMjUsNjUgMzUsNTUgNDUsNjAgNjAsNTAgNzUsNjUgNzUsNzAgMjUsNzAiIGZpbGw9IiNGM0Y0RjYiLz4KPC9zdmc+';
-            }}
-            style={{width: '80px', height: '80px', opacity: '0.5'}}
-          />
         </div>
 
         <div className="action-buttons">
@@ -236,30 +224,28 @@ function AddWorkout() {
           <button className="add-equipment-btn">+ Add equipment</button>
         </div>
 
-        <div className="upload-container">
-          <label>Upload Image</label>
-          <input
-            type="file"
-            accept="image/*"
-            onChange={handleImageUpload}
-            className="file-input"
-          />
-          {workoutData.image ? (
-            <img 
-              src={URL.createObjectURL(workoutData.image)} 
-              alt="Preview" 
-              style={{width: '60px', height: '60px', borderRadius: '4px', objectFit: 'cover'}}
+        </div>
+
+        <div className="upload-area">
+          <div className="upload-section">
+            <label>Upload Image</label>
+            <input
+              type="file"
+              accept="image/*"
+              onChange={handleImageUpload}
+              className="file-input"
+              id="image-upload"
             />
-          ) : (
-            <img 
-              src="/image-placeholder.png" 
-              alt="Image placeholder" 
-              onError={(e) => {
-                e.target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxyZWN0IHg9IjIwIiB5PSIzMCIgd2lkdGg9IjYwIiBoZWlnaHQ9IjQwIiByeD0iNCIgZmlsbD0iIzlCOUI5OCIvPgo8Y2lyY2xlIGN4PSIzNSIgY3k9IjQyIiByPSI1IiBmaWxsPSIjRjNGNEY2Ii8+Cjxwb2x5Z29uIHBvaW50cz0iMjUsNjUgMzUsNTUgNDUsNjAgNjAsNTAgNzUsNjUgNzUsNzAgMjUsNzAiIGZpbGw9IiNGM0Y0RjYiLz4KPC9zdmc+';
-              }}
-              style={{width: '60px', height: '60px', borderRadius: '4px', opacity: '0.7'}}
-            />
-          )}
+            <label htmlFor="image-upload" className="upload-placeholder">
+              <img 
+                src="/image-placeholder.png" 
+                alt="Image placeholder" 
+                onError={(e) => {
+                  e.target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi0vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxyZWN0IHg9IjIwIiB5PSIzMCIgd2lkdGg9IjYwIiBoZWlnaHQ9IjQwIiByeD0iNCIgZmlsbD0iIzlCOUI5OCIvPgo8Y2lyY2xlIGN4PSIzNSIgY3k9IjQyIiByPSI1IiBmaWxsPSIjRjNGNEY2Ii8+Cjxwb2x5Z29uIHBvaW50cz0iMjUsNjUgMzUsNTUgNDUsNjAgNjAsNTAgNzUsNjUgNzUsNzAgMjUsNzAiIGZpbGw9IiNGM0Y0RjYiLz4KPC9zdmc+';
+                }}
+              />
+            </label>
+          </div>
         </div>
 
         <div className="action-buttons">

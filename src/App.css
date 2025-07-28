@@ -637,10 +637,6 @@ font-weight: bold;
   padding: 20px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   position: relative;
-}
-
-/* First container specific styling */
-.section-container:first-of-type {
   display: flex;
   gap: 20px;
 }
@@ -658,22 +654,48 @@ font-weight: bold;
   flex: 1;
 }
 
-/* Default image area */
-.default-image-area {
+/* Upload area on the right */
+.upload-area {
   width: 200px;
-  height: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+/* Individual upload sections */
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.upload-section label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+}
+
+.upload-section .file-input {
+  display: none;
+}
+
+.upload-placeholder {
+  width: 150px;
+  height: 100px;
   background-color: #f8f9fa;
   border: 2px dashed #d1d1d1;
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
+  cursor: pointer;
 }
 
-.default-image-area img {
-  width: 80px;
-  height: 80px;
+.upload-placeholder img {
+  width: 60px;
+  height: 60px;
   opacity: 0.5;
 }
 
@@ -685,7 +707,7 @@ font-weight: bold;
 }
 
 .form-group label {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   margin-bottom: 6px;
   color: #555;
@@ -694,10 +716,10 @@ font-weight: bold;
 .form-input,
 .form-textarea,
 .form-select {
-  padding: 8px;
+  padding: 6px;
   border: 1px solid #d1d1d1;
-  border-radius: 4px;
-  font-size: 14px;
+  border-radius: 3px;
+  font-size: 12px;
   outline: none;
 }
 
@@ -709,7 +731,7 @@ font-weight: bold;
 
 /* Textarea */
 .form-textarea {
-  min-height: 70px;
+  min-height: 60px;
   resize: none;
 }
 
@@ -720,41 +742,7 @@ font-weight: bold;
   gap: 15px;
 }
 
-/* Upload containers */
-.upload-container {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 15px;
-  padding: 12px;
-  background-color: #f8f9fa;
-  border: 1px solid #e9ecef;
-  border-radius: 6px;
-}
-
-.upload-container label {
-  font-size: 14px;
-  font-weight: 500;
-  color: #555;
-  min-width: 100px;
-}
-
-.file-input {
-  display: block;
-  padding: 6px 10px;
-  border: 1px solid #d1d1d1;
-  border-radius: 4px;
-  background-color: white;
-  font-size: 13px;
-  cursor: pointer;
-}
-
-.file-input:focus {
-  outline: none;
-  border-color: #7b2cbf;
-}
-
-/* Buttons row - positioned at bottom right for all containers */
+/* Buttons row */
 .action-buttons {
   position: absolute;
   bottom: 20px;
