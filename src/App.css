@@ -726,16 +726,32 @@ font-weight: bold;
   align-items: center;
   gap: 15px;
   margin-bottom: 15px;
+  padding: 12px;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
 }
 
 .upload-container label {
   font-size: 14px;
   font-weight: 500;
   color: #555;
+  min-width: 100px;
 }
 
 .file-input {
   display: block;
+  padding: 6px 10px;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.file-input:focus {
+  outline: none;
+  border-color: #7b2cbf;
 }
 
 /* Buttons row - positioned at bottom right for all containers */
