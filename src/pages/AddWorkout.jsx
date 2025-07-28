@@ -115,7 +115,16 @@ function AddWorkout() {
         </div>
 
         <div className="default-image-area">
-          <div style={{fontSize: '40px', color: '#ccc'}}>🖼️</div>
+          <img 
+            src="/gallery-icon.png" 
+            alt="Gallery" 
+            onError={(e) => {
+              e.target.style.display = 'none';
+              e.target.nextSibling.style.display = 'block';
+            }}
+            style={{width: '80px', height: '80px', opacity: '0.5'}}
+          />
+          <div style={{fontSize: '40px', color: '#ccc', display: 'none'}}>🖼️</div>
         </div>
 
         <div className="action-buttons">
