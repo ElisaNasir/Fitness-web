@@ -1,142 +1,232 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-
+import React, { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 function AddWorkout() {
   const navigate = useNavigate();
-  const [workoutData, setWorkoutData] = useState({
-    title: '',
-    description: '',
-    duration: '',
-    difficulty: '',
-    image: null
+
+  const [exerciseData, setExerciseData] = useState({
+    exerciseName: '',
+    exerciseDescription: '',
+    workout: '',
+    video: null,
   });
 
-  const handleInputChange = (e) => {
+  const [workoutData, setWorkoutData] = useState({
+    workoutName: '',
+    workoutDescription: '',
+    category: '',
+    calories: '',
+    duration: '',
+    level: '',
+    equipment: '',
+    image: null,
+  });
+
+  const handleExerciseChange = (e) => {
     const { name, value } = e.target;
-    setWorkoutData(prev => ({
+    setExerciseData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
-  const handleImageChange = (e) => {
-    const file = e.target.files[0];
-    setWorkoutData(prev => ({
+  const handleWorkoutChange = (e) => {
+    const { name, value } = e.target;
+    setWorkoutData((prev) => ({
       ...prev,
-      image: file
+      [name]: value,
+    }));
+  };
+
+  const handleVideoUpload = (e) => {
+    const file = e.target.files[0];
+    setExerciseData((prev) => ({
+      ...prev,
+      video: file,
+    }));
+  };
+
+  const handleImageUpload = (e) => {
+    const file = e.target.files[0];
+    setWorkoutData((prev) => ({
+      ...prev,
+      image: file,
     }));
   };
 
   const handleSave = () => {
-    // Add your save logic here
-    console.log('Workout data:', workoutData);
-    // Navigate back to workouts page
-    navigate('/workouts');
-  };
-
-  const handleCancel = () => {
-    navigate('/workouts');
+    console.log('Exercise Data:', exerciseData);
+    console.log('Workout Data:', workoutData);
+    navigate('/workouts'); // Redirect after saving
   };
 
   return (
     <div className="add-workout-page">
-      {/* First Container - Workout Details */}
-      <div className="workout-details-container">
-        <h2 className="container-title">Workout Details</h2>
-        
+      <h3 className="page-heading">Add new Exercise</h3>
+      
+      {/* First Container - Exercise Information */}
+      <div className="section-container">
+        <div className="form-content">
+          <h2 className="section-title">Exercise Information</h2>
+
+          <div className="form-group">
+            <label>Exercise Name</label>
+            <input
+              type="text"
+              name="exerciseName"
+              value={exerciseData.exerciseName}
+              onChange={handleExerciseChange}
+              placeholder="Arms Exercise"
+              className="form-input"
+            />
+          </div>
+
+          <div className="form-group">
+            <label>Exercise Description</label>
+            <textarea
+              name="exerciseDescription"
+              value={exerciseData.exerciseDescription}
+              onChange={handleExerciseChange}
+              placeholder="Description"
+              className="form-textarea"
+            />
+          </div>
+
+          <div className="form-group">
+            <label>Select a Workout</label>
+            <input
+              type="text"
+              name="workout"
+              value={exerciseData.workout}
+              onChange={handleExerciseChange}
+              placeholder="Select Workout"
+              className="form-input"
+            />
+          </div>
+
+          <div className="upload-container">
+            <label>Upload Video</label>
+            <input
+              type="file"
+              accept="video/*"
+              onChange={handleVideoUpload}
+              className="file-input"
+            />
+          </div>
+        </div>
+
+        <div className="default-image-area">
+          <div style={{fontSize: '40px', color: '#ccc'}}>🖼️</div>
+        </div>
+
+        <div className="action-buttons">
+          <Link to="/workouts" className="cancel-btn">Back</Link>
+          <button className="save-btn" onClick={handleSave}>Save</button>
+        </div>
+      </div>
+
+      {/* === Workout Information Section === */}
+      <div className="section-container">
+        <h2 className="section-title">Workout Information</h2>
+
         <div className="form-group">
-          <label>Workout Title</label>
+          <label>Workout Name</label>
           <input
             type="text"
-            name="title"
-            value={workoutData.title}
-            onChange={handleInputChange}
-            placeholder="Enter workout title"
-            className="workout-input"
+            name="workoutName"
+            value={workoutData.workoutName}
+            onChange={handleWorkoutChange}
+            placeholder="Arms Exercise"
+            className="form-input"
           />
         </div>
 
         <div className="form-group">
-          <label>Description</label>
+          <label>Workout Description</label>
           <textarea
-            name="description"
-            value={workoutData.description}
-            onChange={handleInputChange}
-            placeholder="Describe the workout"
-            className="workout-textarea"
+            name="workoutDescription"
+            value={workoutData.workoutDescription}
+            onChange={handleWorkoutChange}
+            placeholder="Description"
+            className="form-textarea"
           />
         </div>
 
         <div className="form-row">
           <div className="form-group">
-            <label>Duration (minutes)</label>
+            <label>Category</label>
             <input
-              type="number"
-              name="duration"
-              value={workoutData.duration}
-              onChange={handleInputChange}
-              placeholder="30"
-              className="workout-input"
+              type="text"
+              name="category"
+              value={workoutData.category}
+              onChange={handleWorkoutChange}
+              placeholder="Category"
+              className="form-input"
             />
           </div>
-
           <div className="form-group">
-            <label>Difficulty Level</label>
-            <select
-              name="difficulty"
-              value={workoutData.difficulty}
-              onChange={handleInputChange}
-              className="workout-select"
-            >
-              <option value="">Select difficulty</option>
-              <option value="beginner">Beginner</option>
-              <option value="intermediate">Intermediate</option>
-              <option value="advanced">Advanced</option>
-            </select>
+            <label>Calories Burned</label>
+            <input
+              type="text"
+              name="calories"
+              value={workoutData.calories}
+              onChange={handleWorkoutChange}
+              placeholder="340 Kcal"
+              className="form-input"
+            />
           </div>
         </div>
-      </div>
 
-      {/* Second Container - Image Upload */}
-      <div className="workout-image-container">
-        <h2 className="container-title">Workout Image</h2>
-        
-        <div className="image-upload-section">
-          <div className="image-preview">
-            {workoutData.image ? (
-              <img 
-                src={URL.createObjectURL(workoutData.image)} 
-                alt="Preview" 
-                className="preview-image"
-              />
-            ) : (
-              <div className="image-placeholder">
-                <span>No image selected</span>
-              </div>
-            )}
-          </div>
-
-          <div className="upload-controls">
+        <div className="form-row">
+          <div className="form-group">
+            <label>Duration</label>
             <input
-              type="file"
-              id="image-upload"
-              accept="image/*"
-              onChange={handleImageChange}
-              className="file-input"
+              type="text"
+              name="duration"
+              value={workoutData.duration}
+              onChange={handleWorkoutChange}
+              placeholder="30 mins"
+              className="form-input"
             />
-            <label htmlFor="image-upload" className="upload-btn">
-              Choose Image
-            </label>
           </div>
+          <div className="form-group">
+            <label>Level</label>
+            <input
+              type="text"
+              name="level"
+              value={workoutData.level}
+              onChange={handleWorkoutChange}
+              placeholder="Beginner"
+              className="form-input"
+            />
+          </div>
+        </div>
+
+        <div className="form-group">
+          <label>Equipment Used</label>
+          <input
+            type="text"
+            name="equipment"
+            value={workoutData.equipment}
+            onChange={handleWorkoutChange}
+            placeholder="Equipment"
+            className="form-input"
+          />
+          <button className="add-equipment-btn">+ Add equipment</button>
+        </div>
+
+        <div className="upload-container">
+          <label>Upload Image</label>
+          <input
+            type="file"
+            accept="image/*"
+            onChange={handleImageUpload}
+            className="file-input"
+          />
         </div>
 
         <div className="action-buttons">
-          <button onClick={handleCancel} className="cancel-btn">
-            Cancel
-          </button>
-          <button onClick={handleSave} className="save-btn">
-            Save Workout
-          </button>
+          <Link to="/workouts" className="cancel-btn">Back</Link>
+          <button className="save-btn" onClick={handleSave}>Save</button>
         </div>
       </div>
     </div>
