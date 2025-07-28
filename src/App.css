@@ -826,19 +826,7 @@ font-weight: bold;
   color: #721c24;
 }
 
-.Sub-container {
-  margin-top: 30px;
-  display: flex;
-  justify-content: flex-start; 
-}
 
-.Pay-box {
-  width: 85%;
-  background: #f5edff;
-  border: 2px solid #a259ff;
-  border-radius: 20px;
-  padding: 25px;
-}
 
 .users-container {
   padding: 20px;
