@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
-import { FiEdit, FiTrash2 } from 'react-icons/fi';
+import penicon from '/pen.png';
+import delicon1 from '/del.png';
+import plusicon from '/plus.png';
 function Subscriptions(){
      const [plans, setPlans] = useState([
     { id: 1, name: 'Basic Plan', monthly: 9.99, yearly: 80 },
@@ -36,11 +38,12 @@ function Subscriptions(){
       <>
       <div className="subscription-container">
         <div className="subscription-header">
-          <h2 className="subscription-heading">Our Subscription Plans</h2>
-          <button className="add-subscription-btn" onClick={() => setAddModalOpen(true)}>
-            + Add Subscription
-          </button>
-        </div>
+        <h2 className="subscription-heading">Our Subscription Plans</h2>
+        <button className="add-subscription-btn" onClick={() => setAddModalOpen(true)}>
+        <img src={plusicon} alt="Plus" className="Plus-icon" />
+        Add Subscription
+        </button>
+      </div>
 
         {plans.map(plan => (
           <div key={plan.id} className="subscription-box">
@@ -55,10 +58,10 @@ function Subscriptions(){
             </div>
             <div className="icon-block">
               <span className="icon-circle" onClick={() => setEditingPlan(plan)}>
-                <FiEdit className="action-icon" />
+              <img src={penicon} alt="Plus" className="action-icon" />
               </span>
               <span className="icon-circle" onClick={() => setDeletingPlan(plan)}>
-                <FiTrash2 className="action-icon" />
+              <img src={delicon1} alt="Plus" className="action-icon" />
               </span>
             </div>
           </div>
@@ -110,23 +113,23 @@ function Subscriptions(){
                 type="text"
                 value={newPlan.name}
                 placeholder="ABC"
-                onChange={e => setNewPlan({ newPlan, name: e.target.value })}
+                onChange={e => setNewPlan({ ...newPlan, name: e.target.value })}
               />
               <label>Price $</label>
               <input
                 type="number"
                 value={newPlan.monthly}
                 placeholder="$$$"
-                onChange={e => setNewPlan({ newPlan, monthly: e.target.value })}
+                onChange={e => setNewPlan({ ...newPlan, monthly: e.target.value })}
               />
               <label>Description</label>
               <textarea
                 value={newPlan.description}
                 placeholder="What's included in the plan?"
-                onChange={e => setNewPlan({ newPlan, description: e.target.value })}
+                onChange={e => setNewPlan({ ...newPlan, description: e.target.value })}
               />
               <button className="add-btn" onClick={handleAddSubscription}>Add Subscription</button>
-              <button className="update-btn" onClick={() => setAddModalOpen(false)}>Cancel</button>
+              <button className="update-btn" onClick={() => setAddModalOpen(false)}>Update</button>
             </div>
           </div>
         )}
