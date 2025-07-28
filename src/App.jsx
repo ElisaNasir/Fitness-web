@@ -7,6 +7,7 @@ import Dashboard from './pages/Dashboard'
 import Users from './pages/Users'
 import Subscriptions from './pages/Subscriptions'
 import Workouts from './pages/Workouts'
+import AddWorkout from './pages/AddWorkout'
 import Community from './pages/Community'
 import DietPlans from './pages/DietPlans'
 
@@ -24,6 +25,7 @@ function App() {
         <Route path='/users' element={<Users/>} />
         <Route path='/subscriptions' element={<Subscriptions/>} />
         <Route path='/workouts' element={<Workouts/>} />
+        <Route path='/add-workout' element={<AddWorkout/>} />
         <Route path='/community' element={<Community/>} />
         <Route path='/dietplan' element={<DietPlans/>} />
       </Routes>
