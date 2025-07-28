@@ -665,12 +665,12 @@ font-weight: bold;
 }
 
 .report-table {
-  width: 100%;
+  width: calc(100% + 40px);
+  margin-left: -20px;
+  margin-right: -20px;
   border-collapse: collapse;
   font-size: 14px;
   margin-bottom: 6px;
-  justify-content: center; 
-  align-items: center;
 }
 
 .report-table th {
@@ -680,6 +680,14 @@ font-weight: bold;
   font-weight: bold;
   border: none;
   position: relative;
+}
+
+.report-table th:first-child {
+  padding-left: 20px;
+}
+
+.report-table th:last-child {
+  padding-right: 20px;
 }
 
 .report-table td {
