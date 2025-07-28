@@ -10,7 +10,7 @@ body {
 .container {
   flex: 1;
   background-color: lavender;
-  padding: 15px;
+  padding: 5px;
 }
 
 .grid-container {
@@ -582,10 +582,11 @@ font-weight: bold;
 .workout-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr); 
-  gap: 4px;
+  gap: 2px;
   padding: 0;
   width: 100%;
   margin: 0;
+  box-sizing: border-box;
 }
 
 .workout-card {
@@ -593,6 +594,8 @@ font-weight: bold;
   position: relative;
   overflow: hidden;
   border-radius: 16px;
+  margin: 0;
+  padding: 0;
 }
 
 .workout-image {
@@ -602,6 +605,9 @@ font-weight: bold;
   border-radius: 16px;
   display: block;
   z-index: 1;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
 }
 
 .delete-icon {
@@ -625,7 +631,7 @@ font-weight: bold;
 .top-right-button-container {
   display: flex;
   justify-content: flex-end;
-  padding: 20px;
+  padding: 5px;
 }
 
 .top-right-button {
