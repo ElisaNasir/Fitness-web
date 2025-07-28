@@ -798,17 +798,27 @@ font-weight: bold;
 }
 
 .Pay-table {
-  width: 100%;
+  width: calc(100% + 50px);
+  margin-left: -25px;
+  margin-right: -25px;
   border-collapse: collapse;
   font-size: 15px;
 }
 
 .Pay-table th {
-  background-color: #e9d8ff;
-  color: #4a148c;
+  background-color: #ebc7fc;
+  color: black;
   font-weight: 600;
   text-align: left;
   padding: 12px 15px;
+}
+
+.Pay-table th:first-child {
+  padding-left: 25px;
+}
+
+.Pay-table th:last-child {
+  padding-right: 25px;
 }
 
 .Pay-table td {
