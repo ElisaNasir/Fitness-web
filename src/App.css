@@ -582,8 +582,8 @@ font-weight: bold;
 .workout-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr); 
-  gap: 1px;
-  padding: 0;
+  gap: 0;
+  padding: 2px;
   margin: 0;
   width: 100%;
   box-sizing: border-box;
@@ -594,7 +594,7 @@ font-weight: bold;
   position: relative;
   overflow: hidden;
   border-radius: 8px;
-  margin: 0;
+  margin: 2px;
   padding: 0;
   line-height: 0;
 }
