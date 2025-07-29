@@ -9,6 +9,7 @@ import Subscriptions from './pages/Subscriptions'
 import Workouts from './pages/Workouts'
 import Community from './pages/Community'
 import DietPlans from './pages/DietPlans'
+import AddWorkout from './pages/AddWorkout'
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
         <Route path='/workouts' element={<Workouts/>} />
         <Route path='/community' element={<Community/>} />
         <Route path='/dietplan' element={<DietPlans/>} />
+         <Route path='/AddWorkout' element={<AddWorkout />} />
       </Routes>
      </main>
     </div>

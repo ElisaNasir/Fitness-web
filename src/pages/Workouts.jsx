@@ -1,9 +1,16 @@
 import React, {useState} from 'react'
 import { FiTrash2 } from 'react-icons/fi';
 import workout from '/armlogo1.png';
+import plusicon from '/plus.png';
+import { useNavigate } from 'react-router-dom';
+
 function Workouts(){
+const navigate = useNavigate();
+  
    const handleClick = () => {
+    navigate('/AddWorkout');
   };
+
 
   const [images, setImages] = useState(Array(8).fill(workout));
   const handleDelete = (indexToDelete) => {
@@ -15,7 +22,8 @@ function Workouts(){
       <div>
     <div className="top-right-button-container">
       <button className="top-right-button" onClick={handleClick}>
-        + Add Workout
+      <img src={plusicon} alt="Plus" className="Plus-icon" />
+        Add Workout
       </button>
     </div>
      <div className="workout-grid">
